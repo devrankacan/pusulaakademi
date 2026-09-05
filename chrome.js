@@ -32,7 +32,17 @@ const pageChrome = {
         <div class="footer-brand-column">
           <a class="brand brand-footer" href="index.html"><span class="brand-mark">✦</span><span><strong>PUSULA</strong><small>AKADEMİ</small></span></a>
           <p>Doğru yöne atılan ilk adım. Yakutiye / Erzurum.</p>
-          <div class="social-links"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Youtube">▶</a></div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/pusulaakademi25/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h2.7l.4-3H14V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H8v3h2.8v8"></path></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8.2a2.5 2.5 0 0 0-1.8-1.8C17.6 6 12 6 12 6s-5.6 0-7.2.4A2.5 2.5 0 0 0 3 8.2 26 26 0 0 0 2.6 12 26 26 0 0 0 3 15.8a2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.2.4 7.2.4s5.6 0 7.2-.4a2.5 2.5 0 0 0 1.8-1.8 26 26 0 0 0 .4-3.8 26 26 0 0 0-.4-3.8Z"></path><path class="social-play" d="m10 9 5 3-5 3V9Z"></path></svg>
+            </a>
+          </div>
         </div>
         <div class="footer-column"><h3>Keşfet</h3><a href="programlar.html">Programlar</a><a href="yaklasimimiz.html">Yaklaşımımız</a><a href="basarilarimiz.html">Başarılarımız</a></div>
         <div class="footer-column"><h3>İletişim</h3><a href="tel:+905072602525">0507 260 25 25</a><a href="mailto:merhaba@pusulaakademi.com">merhaba@pusulaakademi.com</a><span>Ömer Nasuhi Bilmen Mah.<br>Yakutiye / Erzurum</span></div>
