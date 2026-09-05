@@ -14,7 +14,12 @@ const pageChrome = {
         <a href="basarilarimiz.html">Başarılarımız</a>
         <a href="iletisim.html">İletişim</a>
         <button class="search-toggle" type="button" aria-expanded="false" aria-controls="site-search"><span aria-hidden="true">⌕</span> Ara</button>
-        <a class="nav-cta" href="iletisim.html">Ücretsiz görüşme <span>↗</span></a>
+        <a class="nav-cta" href="iletisim.html">
+          <svg class="nav-cta-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7.2 3.5 4.8 4.6c-.8.4-1.2 1.3-.9 2.1 1.9 6.1 5.8 10 11.9 11.9.8.3 1.7-.1 2.1-.9l1.1-2.4c.3-.7.1-1.5-.5-1.9l-2.3-1.6c-.6-.4-1.4-.3-1.9.2l-1 1c-1.8-.9-3.2-2.3-4.1-4.1l1-1c.5-.5.6-1.3.2-1.9L9.1 4c-.4-.6-1.2-.8-1.9-.5Z"></path>
+          </svg>
+          <span>Ücretsiz görüşme</span><b>↗</b>
+        </a>
       </nav>
     </header>
     <div id="site-search" class="search-panel" hidden>
