@@ -8,9 +8,10 @@
   --muted: #647185;
 }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; max-width: 100%; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--cream); color: var(--ink); font-family: "DM Sans", sans-serif; overflow-x: hidden; }
+html, body { max-width: 100%; overflow-x: hidden; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: "DM Sans", sans-serif; }
 a { color: inherit; text-decoration: none; }
 .section-shell { width: min(1160px, calc(100% - 80px)); margin: 0 auto; }
 .section-shell:not(.site-header) { position: relative; }
@@ -216,7 +217,7 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 }
 
 @media (max-width: 760px) {
-  .section-shell { width: min(100% - 40px, 560px); }
+  .section-shell { margin-left: auto; margin-right: auto; width: calc(100% - 32px); }
   .site-header { padding: 20px; }
   .menu-toggle { background: none; border: 0; display: block; padding: 5px; }
   .menu-toggle span:not(.sr-only) { background: var(--ink); display: block; height: 2px; margin: 5px 0; width: 22px; }
@@ -224,11 +225,11 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
   .site-nav.open { display: flex; }
   .search-panel { padding: 18px 20px; top: 68px; }
   .search-results { grid-template-columns: 1fr; max-height: 55vh; overflow-y: auto; }
-  .hero { display: block; min-height: 0; padding-bottom: 70px; padding-top: 45px; }
+  .hero { border-radius: 0 0 24px 24px; display: block; min-height: 0; padding: 45px 16px 70px; width: 100%; }
   .hero-orbit { opacity: .5; right: -330px; }
   h1 { font-size: 48px; }
   .hero-visual { margin-top: 65px; min-height: 390px; }
-  .visual-card-main { height: 350px; margin-left: 30px; }
+  .visual-card-main { height: 350px; margin-left: 20px; margin-right: 12px; }
   .floating-stat { bottom: 0; }
   .section-heading, .results-inner, .contact, .footer-inner { align-items: flex-start; display: block; }
   .section-intro { margin-top: 25px; }
@@ -244,11 +245,11 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
   .metrics strong { font-size: 30px; }
   .testimonial { padding: 80px 0; }
   .contact-action { margin-top: 27px; }
-  .contact { min-height: 430px; padding: 55px 30px 60px; }
+  .contact { min-height: 430px; padding: 55px 24px 60px; width: calc(100% - 32px); }
   .contact-note { right: 23px; top: 18px; transform: rotate(7deg) scale(.85); transform-origin: top right; }
   .ruler-doodle { right: -35px; top: 225px; }
   .pencil-doodle { bottom: 8px; font-size: 62px; right: 15px; }
-  .contact-float { bottom: 18px; right: 17px; }
+  .contact-float { bottom: 18px; right: 12px; }
   .contact-float-toggle { height: 57px; width: 57px; }
   .contact-float-links { bottom: 65px; }
   .float-link b { opacity: 1; transform: none; }
