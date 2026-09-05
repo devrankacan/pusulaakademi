@@ -49,7 +49,7 @@ const pageChrome = {
             </a>
           </div>
         </div>
-        <div class="footer-column"><h3>Keşfet</h3><a href="programlar.html">Programlar</a><a href="yaklasimimiz.html">Yaklaşımımız</a><a href="basarilarimiz.html">Başarılarımız</a></div>
+        <div class="footer-column"><h3>Keşfet</h3><a href="programlar.html">Programlar</a><a href="yaklasimimiz.html">Yaklaşımımız</a><a href="egitmenlerimiz.html">Eğitmenlerimiz</a><a href="basarilarimiz.html">Başarılarımız</a></div>
         <div class="footer-column"><h3>İletişim</h3><a href="tel:+905072602525">0507 260 25 25</a><a href="mailto:merhaba@pusulaakademi.com">merhaba@pusulaakademi.com</a><span>Ömer Nasuhi Bilmen Mah.<br>Yakutiye / Erzurum</span></div>
         <div class="footer-column footer-action"><p>Çocuğunuzun rotasını birlikte çizelim.</p><a href="iletisim.html" class="footer-arrow">Görüşme planla <span>↗</span></a></div>
       </div>

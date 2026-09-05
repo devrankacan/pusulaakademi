@@ -175,6 +175,47 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .footer-action p { color: white; font: 600 16px/1.4 "Manrope", sans-serif; margin: 0 0 12px; }
 .footer-arrow { border-bottom: 1px solid #55726e; color: var(--gold) !important; padding-bottom: 8px; width: max-content; }
 .footer-arrow span { color: var(--orange); font-size: 17px; margin-left: 10px; }
+.team-intro { align-items: end; display: grid; gap: 70px; grid-template-columns: 1fr 1fr; margin-bottom: 48px; }
+.team-intro > p { color: var(--muted); font-size: 14px; line-height: 1.8; margin: 0; max-width: 460px; }
+.team-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); }
+.team-card { background: #fff; border-radius: 24px; min-height: 360px; overflow: hidden; padding: 28px 30px; position: relative; }
+.team-card-primary { background: var(--teal); color: white; }
+.team-avatar { align-items: center; border: 1px solid currentColor; border-radius: 50%; display: flex; font-size: 30px; height: 66px; justify-content: center; width: 66px; }
+.avatar-compass { color: var(--gold); }
+.avatar-pencil { background: #fff3b5; color: var(--orange); transform: rotate(-9deg); }
+.avatar-ruler { background: #d6f2f5; color: var(--teal); }
+.team-role { color: var(--orange); font-size: 10px; font-weight: 700; letter-spacing: .13em; margin: 30px 0 17px; }
+.team-card-primary .team-role { color: var(--gold); }
+.team-card h3 { font-size: 29px; letter-spacing: -.06em; line-height: 1.05; }
+.team-card > p:not(.team-role) { color: var(--muted); font-size: 13px; line-height: 1.65; margin-top: 17px; max-width: 230px; }
+.team-card-primary > p:not(.team-role) { color: #c6dcda; }
+.team-line { background: var(--orange); bottom: 0; height: 5px; left: 0; position: absolute; right: 0; }
+.team-values { align-items: center; display: grid; gap: 95px; grid-template-columns: .7fr 1fr; margin: 92px 0; }
+.value-note { background: var(--gold); color: var(--teal); display: flex; flex-direction: column; height: 175px; justify-content: space-between; padding: 20px 24px; transform: rotate(-3deg); width: 190px; }
+.value-note span { font-size: 9px; font-weight: 800; letter-spacing: .18em; }
+.value-note strong { font: 800 20px/1.05 "Manrope", sans-serif; }
+.value-note i { align-self: flex-end; font-style: normal; }
+.value-list { display: grid; gap: 0; }
+.value-list div { align-items: center; border-top: 1px solid #d8dfda; display: grid; gap: 22px; grid-template-columns: 32px 1fr; padding: 18px 0; }
+.value-list b { color: var(--orange); font-size: 11px; }
+.value-list span { color: var(--muted); font-size: 13px; }
+.value-list strong { color: var(--ink); margin-right: 7px; }
+.team-cta { align-items: center; background: var(--orange); border-radius: 28px; color: white; display: flex; justify-content: space-between; overflow: hidden; padding: 45px 50px; position: relative; }
+.team-cta::after { border: 1px solid rgba(255,255,255,.25); border-radius: 50%; content: ""; height: 280px; position: absolute; right: -80px; top: -110px; width: 280px; }
+.team-cta > div, .team-cta > a { position: relative; z-index: 1; }
+.team-cta h2 em { color: var(--gold); }
+.team-cta .eyebrow { color: var(--cream); margin-bottom: 16px; }
+.team-cta .eyebrow > span { background: var(--cream); }
+@media (max-width: 760px) {
+  .team-intro { display: block; margin-bottom: 32px; }
+  .team-intro > p { margin-top: 24px; }
+  .team-grid { grid-template-columns: 1fr; }
+  .team-card { min-height: 300px; }
+  .team-values { gap: 48px; grid-template-columns: 1fr; margin: 62px 0; }
+  .value-note { margin-left: 12px; }
+  .team-cta { align-items: flex-start; display: block; padding: 35px 28px; }
+  .team-cta .button { margin-top: 28px; }
+}
 .copyright { border-top: 1px solid #315050; color: #7e9a95; display: flex; font-size: 10px; justify-content: space-between; padding-bottom: 22px; padding-top: 18px; }
 .sr-only { clip: rect(0,0,0,0); clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
 .contact-float { bottom: 26px; position: fixed; right: 27px; z-index: 20; }
