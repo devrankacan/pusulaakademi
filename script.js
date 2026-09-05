@@ -70,3 +70,16 @@ const revealObserver = new IntersectionObserver(
 );
 
 animatedElements.forEach((element) => revealObserver.observe(element));
+
+const contactFloat = document.querySelector(".contact-float");
+const contactFloatToggle = document.querySelector(".contact-float-toggle");
+
+contactFloatToggle?.addEventListener("click", () => {
+  const isOpen = contactFloat.classList.toggle("is-open");
+  contactFloatToggle.setAttribute("aria-expanded", String(isOpen));
+  contactFloatToggle.setAttribute(
+    "aria-label",
+    isOpen ? "İletişim seçeneklerini kapat" : "İletişim seçeneklerini aç"
+  );
+  document.querySelector(".contact-float-links")?.setAttribute("aria-hidden", String(!isOpen));
+});

@@ -168,6 +168,24 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .footer-arrow span { color: var(--orange); font-size: 17px; margin-left: 10px; }
 .copyright { border-top: 1px solid #315050; color: #7e9a95; display: flex; font-size: 10px; justify-content: space-between; padding-bottom: 22px; padding-top: 18px; }
 .sr-only { clip: rect(0,0,0,0); clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
+.contact-float { bottom: 26px; position: fixed; right: 27px; z-index: 20; }
+.contact-float-toggle { align-items: center; background: var(--orange); border: 4px solid white; border-radius: 999px; box-shadow: 0 10px 25px rgba(7,24,47,.2); color: white; cursor: pointer; display: flex; height: 62px; justify-content: center; position: relative; transition: background .25s, transform .25s; width: 62px; }
+.contact-float-toggle:hover { background: var(--teal); transform: scale(1.06); }
+.contact-float-toggle i { background: var(--teal); border-radius: 5px; color: white; font-size: 11px; font-style: normal; opacity: 0; padding: 6px 9px; pointer-events: none; position: absolute; right: 72px; transform: translateX(8px); transition: opacity .2s, transform .2s; white-space: nowrap; }
+.contact-float-toggle:hover i, .contact-float.is-open .contact-float-toggle i { opacity: 1; transform: translateX(0); }
+.float-icon { font-size: 25px; line-height: 1; transition: transform .25s, opacity .25s; }
+.float-close { display: none; font-size: 28px; }
+.contact-float.is-open .float-chat { display: none; }
+.contact-float.is-open .float-close { display: block; }
+.contact-float-links { bottom: 71px; display: flex; flex-direction: column; gap: 10px; opacity: 0; pointer-events: none; position: absolute; right: 7px; transform: translateY(15px) scale(.85); transform-origin: bottom right; transition: opacity .25s, transform .3s; }
+.contact-float.is-open .contact-float-links { opacity: 1; pointer-events: auto; transform: translateY(0) scale(1); }
+.float-link { align-items: center; display: flex; gap: 9px; justify-content: flex-end; }
+.float-link b { background: white; border-radius: 6px; box-shadow: 0 5px 16px rgba(7,24,47,.15); color: var(--teal); font-size: 11px; opacity: 0; padding: 7px 9px; transform: translateX(8px); transition: opacity .2s, transform .2s; }
+.float-link:hover b { opacity: 1; transform: translateX(0); }
+.float-link > span { align-items: center; border: 3px solid white; border-radius: 50%; box-shadow: 0 5px 16px rgba(7,24,47,.18); color: white; display: flex; font: 700 16px "DM Sans"; height: 44px; justify-content: center; width: 44px; }
+.instagram-link > span { background: linear-gradient(135deg, #f9ce34, #ee2a7b 50%, #6228d7); }
+.whatsapp-link > span { background: #20b85a; }
+.phone-link > span { background: var(--teal); }
 .marquee-band { background: var(--teal); color: white; overflow: hidden; transform: rotate(-1.5deg) scale(1.03); }
 .marquee-track { align-items: center; animation: marquee 28s linear infinite; display: flex; gap: 36px; justify-content: flex-start; min-width: max-content; padding: 17px 0; }
 .marquee-track span { font: 800 13px "Manrope", sans-serif; letter-spacing: .15em; }
@@ -225,6 +243,10 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
   .contact-note { right: 23px; top: 18px; transform: rotate(7deg) scale(.85); transform-origin: top right; }
   .ruler-doodle { right: -35px; top: 225px; }
   .pencil-doodle { bottom: 8px; font-size: 62px; right: 15px; }
+  .contact-float { bottom: 18px; right: 17px; }
+  .contact-float-toggle { height: 57px; width: 57px; }
+  .contact-float-links { bottom: 65px; }
+  .float-link b { opacity: 1; transform: none; }
   .footer-inner { gap: 32px; padding: 45px 0 35px; }
   .footer-action { border-left: 0; border-top: 1px solid #315050; padding-left: 0; padding-top: 25px; }
   .footer-inner > p { margin: 26px 0; }

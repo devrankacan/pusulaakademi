@@ -39,8 +39,27 @@ const pageChrome = {
         <div class="footer-column footer-action"><p>Çocuğunuzun rotasını birlikte çizelim.</p><a href="iletisim.html" class="footer-arrow">Görüşme planla <span>↗</span></a></div>
       </div>
       <div class="section-shell copyright"><span>© 2024 Pusula Akademi</span><span>Geleceğine yön ver.</span></div>
-    </footer>`
+    </footer>`,
+  contactFloat: `
+    <div class="contact-float">
+      <div class="contact-float-links" aria-hidden="true">
+        <a class="float-link instagram-link" href="https://www.instagram.com/pusulaakademi25/" target="_blank" rel="noopener" aria-label="Instagram">
+          <span>ig</span><b>Instagram</b>
+        </a>
+        <a class="float-link whatsapp-link" href="https://wa.me/905072602525?text=Merhaba%20Pusula%20Akademi%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp">
+          <span>◔</span><b>WhatsApp</b>
+        </a>
+        <a class="float-link phone-link" href="tel:+905072602525" aria-label="Telefonla ara">
+          <span>☎</span><b>Ara</b>
+        </a>
+      </div>
+      <button class="contact-float-toggle" type="button" aria-expanded="false" aria-label="İletişim seçeneklerini aç">
+        <span class="float-icon float-chat">✦</span><span class="float-icon float-close">×</span>
+        <i>İletişim</i>
+      </button>
+    </div>`
 };
 
 document.querySelector("header")?.replaceWith(document.createRange().createContextualFragment(pageChrome.header));
 document.querySelector("footer")?.replaceWith(document.createRange().createContextualFragment(pageChrome.footer));
+document.body.insertAdjacentHTML("beforeend", pageChrome.contactFloat);
