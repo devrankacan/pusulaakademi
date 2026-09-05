@@ -13,6 +13,7 @@ html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--cream); color: var(--ink); font-family: "DM Sans", sans-serif; }
 a { color: inherit; text-decoration: none; }
 .section-shell { width: min(1160px, calc(100% - 80px)); margin: 0 auto; }
+.section-shell:not(.site-header) { position: relative; }
 .site-header { align-items: center; display: flex; justify-content: space-between; margin: auto; padding: 28px 40px; width: min(1240px, 100%); }
 .brand { align-items: center; display: inline-flex; gap: 10px; letter-spacing: .06em; }
 .brand-mark { align-items: center; background: var(--orange); border-radius: 50%; color: white; display: inline-flex; font-size: 20px; height: 38px; justify-content: center; width: 38px; }
@@ -47,24 +48,29 @@ h1 em, h2 em { color: var(--orange); font-style: normal; }
 .avatar-stack span:nth-child(2) { background: #9ec7c1; }
 .avatar-stack span:nth-child(3) { background: #e9d298; }
 .avatar-stack span:last-child { background: var(--teal); color: white; }
-.hero-visual { min-height: 475px; position: relative; }
+.hero-visual { min-height: 475px; position: relative; animation: rise-in .9s .15s both; }
+.hero-visual::before { border: 1px solid rgba(239,114,88,.3); border-radius: 50%; content: ""; height: 390px; position: absolute; right: -52px; top: 40px; width: 390px; z-index: -1; animation: orbit 18s linear infinite; }
+.hero-visual::after { background: var(--gold); border-radius: 50%; content: ""; filter: blur(1px); height: 13px; position: absolute; right: 80px; top: 48px; width: 13px; animation: blink 2.5s ease-in-out infinite; }
 .visual-card-main { background: var(--mint); height: 430px; margin: 0 30px 0 48px; overflow: hidden; position: relative; }
 .student-photo, .approach-image { background: linear-gradient(145deg, rgba(14,86,83,.1), rgba(14,86,83,.35)), url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=85") center/cover; height: 100%; }
 .quote-card { background: white; bottom: 25px; left: -28px; padding: 17px 25px 18px; position: absolute; width: 250px; }
 .quote-card p { font: 600 13px/1.5 "Manrope", sans-serif; margin: 0; }
 .quote-mark { color: var(--orange); font: 38px Georgia; height: 23px; display: block; }
-.sun-badge { align-items: center; background: var(--gold); border-radius: 50%; color: var(--ink); display: flex; flex-direction: column; font-size: 9px; font-weight: 700; height: 83px; justify-content: center; letter-spacing: .12em; line-height: 1.6; position: absolute; right: 4px; text-align: center; top: -14px; width: 83px; z-index: 2; }
+.sun-badge { align-items: center; animation: float 4s ease-in-out infinite; background: var(--gold); border-radius: 50%; color: var(--ink); display: flex; flex-direction: column; font-size: 9px; font-weight: 700; height: 83px; justify-content: center; letter-spacing: .12em; line-height: 1.6; position: absolute; right: 4px; text-align: center; top: -14px; width: 83px; z-index: 2; }
 .sun-badge strong { font-size: 17px; letter-spacing: .03em; }
-.floating-stat { align-items: center; background: var(--teal); bottom: 10px; color: white; display: flex; gap: 10px; left: 0; padding: 16px 19px; position: absolute; }
+.floating-stat { align-items: center; animation: float 4s 1s ease-in-out infinite; background: var(--teal); bottom: 10px; color: white; display: flex; gap: 10px; left: 0; padding: 16px 19px; position: absolute; }
 .floating-stat strong { font: 800 26px "Manrope"; }
 .floating-stat span { border-left: 1px solid #6d9692; font-size: 10px; line-height: 1.3; padding-left: 10px; }
-.compass { bottom: 94px; color: var(--orange); font-size: 30px; position: absolute; right: 0; }
+.compass { animation: spin 12s linear infinite; bottom: 94px; color: var(--orange); font-size: 30px; position: absolute; right: 0; }
 .section-heading { align-items: end; display: flex; justify-content: space-between; padding-bottom: 47px; }
 h2 { font-size: clamp(32px, 4vw, 49px); letter-spacing: -.06em; line-height: 1.05; }
 .section-intro { color: var(--muted); font-size: 14px; line-height: 1.7; margin: 0 5% 5px 0; max-width: 260px; }
 .programs { padding: 85px 0 125px; }
 .program-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); }
-.program-card { background: #ebebe4; min-height: 335px; padding: 28px 30px; position: relative; transition: transform .25s; }
+.program-card { background: #ebebe4; min-height: 335px; opacity: 0; padding: 28px 30px; position: relative; transform: translateY(25px); transition: transform .25s, box-shadow .25s; }
+.program-card.is-visible { animation: reveal .7s both; }
+.program-card:nth-child(2).is-visible { animation-delay: .12s; }
+.program-card:nth-child(3).is-visible { animation-delay: .24s; }
 .program-card:hover { transform: translateY(-6px); }
 .program-card.featured { background: var(--teal); color: #fff; }
 .card-icon { align-items: center; border: 1px solid currentColor; border-radius: 50%; display: flex; font-size: 18px; height: 34px; justify-content: center; position: absolute; right: 27px; top: 25px; width: 34px; }
@@ -74,7 +80,8 @@ h2 { font-size: clamp(32px, 4vw, 49px); letter-spacing: -.06em; line-height: 1.0
 .program-card a { bottom: 28px; font-size: 12px; font-weight: 700; left: 30px; position: absolute; }
 .program-card a span { color: var(--orange); margin-left: 9px; }
 .approach { align-items: center; display: grid; gap: 100px; grid-template-columns: .9fr 1fr; padding: 30px 0 145px; }
-.approach-image { background-image: linear-gradient(145deg, rgba(14,86,83,.05), rgba(14,86,83,.45)), url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85"); height: 560px; position: relative; }
+.approach-image { background-image: linear-gradient(145deg, rgba(14,86,83,.05), rgba(14,86,83,.45)), url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85"); height: 560px; opacity: 0; position: relative; transform: translateX(-25px); }
+.approach-image.is-visible { animation: slide-in .8s both; }
 .approach-image span { background: var(--orange); bottom: 0; color: white; font: 800 29px "Manrope"; padding: 25px 28px; position: absolute; right: 0; }
 .approach-copy > p:not(.eyebrow) { color: var(--muted); font-size: 14px; line-height: 1.8; margin: 27px 0 34px; max-width: 430px; }
 .approach-list > div { align-items: flex-start; border-top: 1px solid #d7ddd7; display: flex; gap: 22px; padding: 15px 0; }
@@ -113,6 +120,19 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .footer-links a { color: #d0dfda; }
 .copyright { border-top: 1px solid #315050; color: #7e9a95; display: flex; font-size: 10px; justify-content: space-between; padding-bottom: 22px; padding-top: 18px; }
 .sr-only { clip: rect(0,0,0,0); clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
+.hero-copy { animation: rise-in .8s both; }
+.approach-copy, .results-inner, .testimonial, .contact { opacity: 0; transform: translateY(22px); }
+.approach-copy.is-visible, .results-inner.is-visible, .testimonial.is-visible, .contact.is-visible { animation: reveal .8s both; }
+@keyframes rise-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes reveal { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slide-in { from { opacity: 0; transform: translateX(-25px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes float { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-9px) rotate(2deg); } }
+@keyframes orbit { to { transform: rotate(360deg); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes blink { 0%, 100% { box-shadow: 0 0 0 0 rgba(229,185,98,.45); } 50% { box-shadow: 0 0 0 12px rgba(229,185,98,0); } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
 
 @media (max-width: 760px) {
   .section-shell { width: min(100% - 40px, 560px); }
