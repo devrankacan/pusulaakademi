@@ -44,17 +44,17 @@ const pageChrome = {
     <div class="contact-float">
       <div class="contact-float-links" aria-hidden="true">
         <a class="float-link instagram-link" href="https://www.instagram.com/pusulaakademi25/" target="_blank" rel="noopener" aria-label="Instagram">
-          <span>ig</span><b>Instagram</b>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></span><b>Instagram</b>
         </a>
         <a class="float-link whatsapp-link" href="https://wa.me/905072602525?text=Merhaba%20Pusula%20Akademi%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp">
-          <span>◔</span><b>WhatsApp</b>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.2a8.5 8.5 0 0 1-12.6 7.4L3.5 20l1.4-4.2A8.5 8.5 0 1 1 20.5 11.2Z"></path><path d="M8.7 8.2c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c.6 1.1 1.5 1.9 2.6 2.4l.6-.6c.2-.2.4-.2.6-.1l1.6.8c.3.1.3.3.3.5-.1 1-.7 1.5-1.5 1.6-2.3.1-6.2-3.5-6.6-6.3-.1-.5.1-.9.6-1.2Z"></path></svg></span><b>WhatsApp</b>
         </a>
         <a class="float-link phone-link" href="tel:+905072602525" aria-label="Telefonla ara">
-          <span>☎</span><b>Ara</b>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 3.5 4.8 4.6c-.8.4-1.2 1.3-.9 2.1 1.9 6.1 5.8 10 11.9 11.9.8.3 1.7-.1 2.1-.9l1.1-2.4c.3-.7.1-1.5-.5-1.9l-2.3-1.6c-.6-.4-1.4-.3-1.9.2l-1 1c-1.8-.9-3.2-2.3-4.1-4.1l1-1c.5-.5.6-1.3.2-1.9L9.1 4c-.4-.6-1.2-.8-1.9-.5Z"></path></svg></span><b>Ara</b>
         </a>
       </div>
       <button class="contact-float-toggle" type="button" aria-expanded="false" aria-label="İletişim seçeneklerini aç">
-        <span class="float-icon float-chat">✦</span><span class="float-icon float-close">×</span>
+        <span class="float-icon float-chat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.4a7.8 7.8 0 0 1-8 7.6 8.3 8.3 0 0 1-3.3-.7L4 20l1.4-3.7A7.4 7.4 0 0 1 4 11.4a7.8 7.8 0 0 1 8-7.4 7.8 7.8 0 0 1 8 7.4Z"></path><path d="M8 11.5h.1M12 11.5h.1M16 11.5h.1"></path></svg></span><span class="float-icon float-close">×</span>
         <i>İletişim</i>
       </button>
     </div>`

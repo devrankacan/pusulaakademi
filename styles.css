@@ -183,6 +183,11 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .float-link b { background: white; border-radius: 6px; box-shadow: 0 5px 16px rgba(7,24,47,.15); color: var(--teal); font-size: 11px; opacity: 0; padding: 7px 9px; transform: translateX(8px); transition: opacity .2s, transform .2s; }
 .float-link:hover b { opacity: 1; transform: translateX(0); }
 .float-link > span { align-items: center; border: 3px solid white; border-radius: 50%; box-shadow: 0 5px 16px rgba(7,24,47,.18); color: white; display: flex; font: 700 16px "DM Sans"; height: 44px; justify-content: center; width: 44px; }
+.float-link svg { fill: none; height: 22px; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; width: 22px; }
+.float-link svg path:first-child { fill: none; }
+.instagram-link svg circle:last-child { fill: currentColor; stroke: none; }
+.float-chat svg { fill: none; height: 27px; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; width: 27px; }
+.float-chat svg path:first-child { fill: none; }
 .instagram-link > span { background: linear-gradient(135deg, #f9ce34, #ee2a7b 50%, #6228d7); }
 .whatsapp-link > span { background: #20b85a; }
 .phone-link > span { background: var(--teal); }
