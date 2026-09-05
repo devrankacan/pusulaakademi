@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap");
+
 :root {
   --ink: #07182f;
   --teal: #06244b;
@@ -11,7 +13,7 @@
 * { box-sizing: border-box; max-width: 100%; }
 html { scroll-behavior: smooth; }
 html, body { max-width: 100%; overflow-x: hidden; }
-body { margin: 0; background: var(--cream); color: var(--ink); font-family: "DM Sans", sans-serif; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: "Nunito", sans-serif; }
 a { color: inherit; text-decoration: none; }
 .section-shell { width: min(1160px, calc(100% - 80px)); margin: 0 auto; }
 .section-shell:not(.site-header) { position: relative; }
@@ -19,7 +21,7 @@ a { color: inherit; text-decoration: none; }
 .brand { align-items: center; display: inline-flex; gap: 10px; letter-spacing: .06em; }
 .brand-mark { align-items: center; background: var(--gold); border: 3px solid var(--teal); border-radius: 50%; color: var(--teal); display: inline-flex; font-size: 20px; height: 42px; justify-content: center; width: 42px; }
 .brand strong, .brand small { display: block; line-height: 1; }
-.brand strong { font: 800 17px "Manrope", sans-serif; letter-spacing: .15em; }
+.brand strong { font: 800 17px "Fredoka", sans-serif; letter-spacing: .12em; }
 .brand small { font-size: 9px; letter-spacing: .4em; margin-top: 5px; }
 .site-nav { align-items: center; display: flex; font-size: 13px; gap: 34px; }
 .site-nav a:not(.nav-cta) { color: #476260; }
@@ -36,7 +38,7 @@ a { color: inherit; text-decoration: none; }
 .search-panel { background: var(--ink); box-shadow: 0 18px 40px rgba(19,46,47,.2); color: white; left: 0; padding: 22px max(40px, calc((100% - 1160px) / 2)); position: absolute; right: 0; top: 88px; z-index: 10; }
 .search-form { align-items: center; border-bottom: 1px solid #547573; display: flex; gap: 14px; }
 .search-form > span { color: var(--gold); font-size: 25px; }
-.search-form input { background: transparent; border: 0; color: white; flex: 1; font: 500 18px "Manrope", sans-serif; outline: 0; padding: 12px 0; }
+.search-form input { background: transparent; border: 0; color: white; flex: 1; font: 600 18px "Nunito", sans-serif; outline: 0; padding: 12px 0; }
 .search-form input::placeholder { color: #a8c0ba; }
 .search-close { background: transparent; border: 0; color: #a8c0ba; cursor: pointer; font-size: 26px; }
 .search-results { display: grid; gap: 8px; grid-template-columns: repeat(3, 1fr); padding-top: 16px; }
@@ -54,8 +56,8 @@ a { color: inherit; text-decoration: none; }
 .orbit-two { border-color: rgba(239,114,88,.18); height: 450px; right: -215px; top: -75px; width: 450px; }
 .eyebrow { align-items: center; color: var(--orange); display: flex; font-size: 11px; font-weight: 700; gap: 9px; letter-spacing: .2em; margin: 0 0 24px; text-transform: uppercase; }
 .eyebrow > span { background: var(--orange); display: inline-block; height: 6px; width: 6px; }
-h1, h2, h3 { font-family: "Manrope", sans-serif; margin: 0; }
-h1 { font-size: clamp(45px, 5.3vw, 74px); letter-spacing: -.065em; line-height: .99; max-width: 580px; }
+h1, h2, h3 { font-family: "Fredoka", sans-serif; font-weight: 600; margin: 0; }
+h1 { font-size: clamp(44px, 5.3vw, 72px); letter-spacing: -.045em; line-height: 1.02; max-width: 580px; }
 h1 em, h2 em { color: var(--orange); font-style: normal; }
 .hero-text { color: var(--muted); font-size: 16px; line-height: 1.7; margin: 28px 0 30px; max-width: 420px; }
 .hero-actions { align-items: center; display: flex; gap: 28px; }
@@ -79,16 +81,16 @@ h1 em, h2 em { color: var(--orange); font-style: normal; }
 .visual-card-main { background: var(--mint); border: 8px solid white; border-radius: 30px; height: 430px; margin: 0 30px 0 48px; overflow: hidden; position: relative; }
 .student-photo, .approach-image { background: linear-gradient(145deg, rgba(6,36,75,.2), rgba(6,36,75,.7)), url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=85") center/cover; height: 100%; }
 .quote-card { background: white; border-radius: 18px; bottom: 25px; box-shadow: 0 10px 25px rgba(7,24,47,.12); left: -28px; padding: 17px 25px 18px; position: absolute; width: 250px; }
-.quote-card p { font: 600 13px/1.5 "Manrope", sans-serif; margin: 0; }
+.quote-card p { font: 700 13px/1.5 "Nunito", sans-serif; margin: 0; }
 .quote-mark { color: var(--orange); font: 38px Georgia; height: 23px; display: block; }
 .sun-badge { align-items: center; animation: float 4s ease-in-out infinite; background: var(--gold); border: 3px solid var(--teal); border-radius: 50%; color: var(--teal); display: flex; flex-direction: column; font-size: 9px; font-weight: 700; height: 93px; justify-content: center; letter-spacing: .12em; line-height: 1.6; position: absolute; right: 4px; text-align: center; top: -14px; width: 93px; z-index: 2; }
 .sun-badge strong { font-size: 17px; letter-spacing: .03em; }
 .floating-stat { align-items: center; animation: float 4s 1s ease-in-out infinite; background: var(--teal); border: 4px solid white; border-radius: 18px; bottom: 10px; color: white; display: flex; gap: 10px; left: 0; padding: 16px 19px; position: absolute; }
-.floating-stat strong { font: 800 26px "Manrope"; }
+.floating-stat strong { font: 800 26px "Fredoka"; }
 .floating-stat span { border-left: 1px solid #6d9692; font-size: 10px; line-height: 1.3; padding-left: 10px; }
 .compass { animation: spin 12s linear infinite; bottom: 94px; color: var(--orange); font-size: 30px; position: absolute; right: 0; }
 .section-heading { align-items: end; display: flex; justify-content: space-between; padding-bottom: 47px; }
-h2 { font-size: clamp(32px, 4vw, 49px); letter-spacing: -.06em; line-height: 1.05; }
+h2 { font-size: clamp(32px, 4vw, 49px); letter-spacing: -.045em; line-height: 1.08; }
 .section-intro { color: var(--muted); font-size: 14px; line-height: 1.7; margin: 0 5% 5px 0; max-width: 260px; }
 .programs { padding: 72px 0 96px; position: relative; }
 .programs::before { border: 2px solid var(--gold); border-radius: 4px; content: ""; height: 18px; opacity: .8; position: absolute; right: 2%; top: 70px; transform: rotate(23deg); width: 145px; }
@@ -104,7 +106,7 @@ h2 { font-size: clamp(32px, 4vw, 49px); letter-spacing: -.06em; line-height: 1.0
 .program-card.featured { background: var(--teal); color: #fff; }
 .card-icon { align-items: center; border: 1px solid currentColor; border-radius: 50%; display: flex; font-size: 18px; height: 34px; justify-content: center; position: absolute; right: 27px; top: 25px; width: 34px; }
 .card-label { font-size: 10px; font-weight: 700; letter-spacing: .18em; opacity: .65; text-transform: uppercase; }
-.program-card h3 { font-size: 35px; letter-spacing: -.06em; line-height: 1.03; margin: 43px 0 15px; }
+.program-card h3 { font-size: 35px; letter-spacing: -.04em; line-height: 1.06; margin: 43px 0 15px; }
 .program-card > p:not(.card-label) { font-size: 13px; max-width: 160px; opacity: .68; }
 .program-card a { bottom: 28px; font-size: 12px; font-weight: 700; left: 30px; position: absolute; }
 .program-card a span { color: var(--orange); margin-left: 9px; }
@@ -112,7 +114,7 @@ h2 { font-size: clamp(32px, 4vw, 49px); letter-spacing: -.06em; line-height: 1.0
 .approach-copy { background: repeating-linear-gradient(0deg, transparent 0 31px, rgba(7,24,47,.06) 32px), #fff; border-radius: 24px; padding: 34px; }
 .approach-image { background-image: linear-gradient(145deg, rgba(6,36,75,.05), rgba(6,36,75,.45)), url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85"); border: 8px solid white; border-radius: 30px; box-shadow: 14px 14px 0 var(--gold); height: 560px; opacity: 0; position: relative; transform: translateX(-25px); }
 .approach-image.is-visible { animation: slide-in .8s both; }
-.approach-image span { background: var(--orange); bottom: 0; color: white; font: 800 29px "Manrope"; padding: 25px 28px; position: absolute; right: 0; }
+.approach-image span { background: var(--orange); bottom: 0; color: white; font: 700 29px "Fredoka"; padding: 25px 28px; position: absolute; right: 0; }
 .approach-copy > p:not(.eyebrow) { color: var(--muted); font-size: 14px; line-height: 1.8; margin: 27px 0 34px; max-width: 430px; }
 .approach-list > div { align-items: flex-start; border-top: 1px solid #d7ddd7; display: flex; gap: 22px; padding: 15px 0; }
 .approach-list strong { color: var(--orange); font-size: 11px; }
@@ -126,13 +128,13 @@ h2 { font-size: clamp(32px, 4vw, 49px); letter-spacing: -.06em; line-height: 1.0
 .results h2 em, .contact h2 em { color: var(--gold); }
 .metrics { display: flex; gap: 50px; }
 .metrics div { border-left: 1px solid #4f8582; padding-left: 24px; }
-.metrics strong { display: block; font: 800 42px "Manrope"; letter-spacing: -.07em; }
+.metrics strong { display: block; font: 700 42px "Fredoka"; letter-spacing: -.04em; }
 .metrics strong span { color: var(--gold); }
 .metrics small { color: #bed3cc; font-size: 11px; }
 .testimonial { padding: 82px 0 88px; text-align: center; }
 .testimonial::before { color: var(--gold); content: "✦"; font-size: 44px; left: 2%; position: absolute; top: 80px; transform: rotate(15deg); }
 .testimonial .eyebrow { justify-content: center; }
-blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-spacing: -.05em; margin: 0 auto 25px; max-width: 790px; }
+blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Fredoka", sans-serif; letter-spacing: -.035em; margin: 0 auto 25px; max-width: 790px; }
 .student-name { color: var(--muted); font-size: 12px; }
 .student-name strong { color: var(--ink); }
 .student-name span { color: var(--orange); padding: 0 8px; }
@@ -143,7 +145,7 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .contact-note { background: var(--gold); color: var(--teal); display: flex; flex-direction: column; height: 132px; justify-content: space-between; padding: 16px 19px; position: absolute !important; right: 40%; top: -35px; transform: rotate(7deg); width: 130px; z-index: 2 !important; }
 .contact-note::before { border-left: 12px solid transparent; border-right: 12px solid transparent; border-top: 14px solid var(--gold); bottom: -13px; content: ""; left: 22px; position: absolute; }
 .contact-note span { font-size: 9px; font-weight: 800; letter-spacing: .15em; }
-.contact-note b { font: 800 16px/1.05 "Manrope", sans-serif; }
+.contact-note b { font: 700 16px/1.05 "Fredoka", sans-serif; }
 .contact-note i { align-self: flex-end; font-style: normal; }
 .contact-doodle { pointer-events: none; position: absolute !important; }
 .ruler-doodle { border: 2px solid var(--gold); border-radius: 3px; height: 24px; opacity: .9; right: 8%; top: 40px; transform: rotate(-24deg); width: 190px; }
@@ -172,7 +174,7 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .footer-column a, .footer-column span { color: #d0dfda; font-size: 12px; }
 .footer-column a:hover { color: var(--orange); }
 .footer-action { border-left: 1px solid #315050; padding-left: 25px; }
-.footer-action p { color: white; font: 600 16px/1.4 "Manrope", sans-serif; margin: 0 0 12px; }
+.footer-action p { color: white; font: 700 16px/1.4 "Fredoka", sans-serif; margin: 0 0 12px; }
 .footer-arrow { border-bottom: 1px solid #55726e; color: var(--gold) !important; padding-bottom: 8px; width: max-content; }
 .footer-arrow span { color: var(--orange); font-size: 17px; margin-left: 10px; }
 .team-intro { align-items: end; display: grid; gap: 70px; grid-template-columns: 1fr 1fr; margin-bottom: 48px; }
@@ -193,7 +195,7 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .team-values { align-items: center; display: grid; gap: 95px; grid-template-columns: .7fr 1fr; margin: 92px 0; }
 .value-note { background: var(--gold); color: var(--teal); display: flex; flex-direction: column; height: 175px; justify-content: space-between; padding: 20px 24px; transform: rotate(-3deg); width: 190px; }
 .value-note span { font-size: 9px; font-weight: 800; letter-spacing: .18em; }
-.value-note strong { font: 800 20px/1.05 "Manrope", sans-serif; }
+.value-note strong { font: 700 20px/1.05 "Fredoka", sans-serif; }
 .value-note i { align-self: flex-end; font-style: normal; }
 .value-list { display: grid; gap: 0; }
 .value-list div { align-items: center; border-top: 1px solid #d8dfda; display: grid; gap: 22px; grid-template-columns: 32px 1fr; padding: 18px 0; }
@@ -233,7 +235,7 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .float-link { align-items: center; display: flex; gap: 9px; justify-content: flex-end; }
 .float-link b { background: white; border-radius: 6px; box-shadow: 0 5px 16px rgba(7,24,47,.15); color: var(--teal); font-size: 11px; opacity: 0; padding: 7px 9px; transform: translateX(8px); transition: opacity .2s, transform .2s; }
 .float-link:hover b { opacity: 1; transform: translateX(0); }
-.float-link > span { align-items: center; border: 3px solid white; border-radius: 50%; box-shadow: 0 5px 16px rgba(7,24,47,.18); color: white; display: flex; font: 700 16px "DM Sans"; height: 44px; justify-content: center; width: 44px; }
+.float-link > span { align-items: center; border: 3px solid white; border-radius: 50%; box-shadow: 0 5px 16px rgba(7,24,47,.18); color: white; display: flex; font: 700 16px "Nunito"; height: 44px; justify-content: center; width: 44px; }
 .contact-float .float-link > span { flex: 0 0 44px; max-width: 44px; }
 .float-link svg { fill: none; height: 22px; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; width: 22px; }
 .float-link svg path:first-child { fill: none; }
@@ -250,7 +252,7 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .phone-link > span { background: var(--teal); }
 .marquee-band { background: var(--teal); color: white; overflow: hidden; transform: rotate(-1.5deg) scale(1.03); }
 .marquee-track { align-items: center; animation: marquee 28s linear infinite; display: flex; gap: 36px; justify-content: flex-start; min-width: max-content; padding: 17px 0; }
-.marquee-track span { font: 800 13px "Manrope", sans-serif; letter-spacing: .15em; }
+.marquee-track span { font: 800 13px "Fredoka", sans-serif; letter-spacing: .12em; }
 .marquee-track b { color: var(--gold); font-size: 17px; }
 .marquee-band + .programs { padding-top: 112px; }
 .button-primary, .button-light, .nav-cta { transition: box-shadow .25s, transform .25s; }
