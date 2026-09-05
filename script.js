@@ -19,12 +19,12 @@ const searchInput = document.querySelector("#search-input");
 const searchClose = document.querySelector(".search-close");
 const searchResults = document.querySelector(".search-results");
 const searchableContent = [
-  { title: "LGS Hazırlık", text: "Ortaokul öğrencileri için sınava hazırlık programı.", href: "#programlar" },
-  { title: "YKS Hazırlık", text: "Lise öğrencileri için üniversite sınavı hazırlık programı.", href: "#programlar" },
-  { title: "Kişisel Gelişim", text: "Potansiyelini keşfet ve kendine yatırım yap.", href: "#programlar" },
-  { title: "Yaklaşımımız", text: "Kişiye özel plan, güçlü rehberlik ve gerçek takip.", href: "#yaklasim" },
-  { title: "Başarılarımız", text: "2.000+ öğrenci, 12+ yıllık deneyim ve yüzde 94 hedefe ulaşma.", href: "#basarilar" },
-  { title: "İletişim", text: "Ücretsiz görüşme için Pusula Akademi ile iletişime geç.", href: "#iletisim" },
+  { title: "LGS Hazırlık", text: "Ortaokul öğrencileri için sınava hazırlık programı.", href: "programlar.html" },
+  { title: "YKS Hazırlık", text: "Lise öğrencileri için üniversite sınavı hazırlık programı.", href: "programlar.html" },
+  { title: "Kişisel Gelişim", text: "Potansiyelini keşfet ve kendine yatırım yap.", href: "programlar.html" },
+  { title: "Yaklaşımımız", text: "Kişiye özel plan, güçlü rehberlik ve gerçek takip.", href: "yaklasimimiz.html" },
+  { title: "Başarılarımız", text: "2.000+ öğrenci, 12+ yıllık deneyim ve yüzde 94 hedefe ulaşma.", href: "basarilarimiz.html" },
+  { title: "İletişim", text: "Ücretsiz görüşme için Pusula Akademi ile iletişime geç.", href: "iletisim.html" },
 ];
 
 function closeSearch() {
