@@ -31,9 +31,21 @@
         <a href="#yaklasim">Yaklaşımımız</a>
         <a href="#basarilar">Başarılarımız</a>
         <a href="#iletisim">İletişim</a>
+        <button class="search-toggle" type="button" aria-expanded="false" aria-controls="site-search">
+          <span aria-hidden="true">⌕</span> Ara
+        </button>
         <a class="nav-cta" href="#iletisim">Ücretsiz görüşme <span>↗</span></a>
       </nav>
     </header>
+    <div id="site-search" class="search-panel" hidden>
+      <form class="search-form" role="search">
+        <label class="sr-only" for="search-input">Sitede ara</label>
+        <span aria-hidden="true">⌕</span>
+        <input id="search-input" type="search" placeholder="Program, hedef veya bilgi ara..." autocomplete="off" />
+        <button type="button" class="search-close" aria-label="Aramayı kapat">×</button>
+      </form>
+      <div class="search-results" aria-live="polite"></div>
+    </div>
 
     <main id="top">
       <section class="hero section-shell">
@@ -162,9 +174,14 @@
 
     <footer class="site-footer">
       <div class="section-shell footer-inner">
-        <a class="brand brand-footer" href="#top"><span class="brand-mark">✦</span><span><strong>PUSULA</strong><small>AKADEMİ</small></span></a>
-        <p>Erzurum'dan geleceğe uzanan eğitim yolculuğu.</p>
-        <div class="footer-links"><a href="#programlar">Programlar</a><a href="#iletisim">İletişim</a><a href="#">Instagram ↗</a></div>
+        <div class="footer-brand-column">
+          <a class="brand brand-footer" href="#top"><span class="brand-mark">✦</span><span><strong>PUSULA</strong><small>AKADEMİ</small></span></a>
+          <p>Erzurum'dan geleceğe uzanan eğitim yolculuğu.</p>
+          <div class="social-links"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Youtube">▶</a></div>
+        </div>
+        <div class="footer-column"><h3>Keşfet</h3><a href="#programlar">Programlar</a><a href="#yaklasim">Yaklaşımımız</a><a href="#basarilar">Başarılarımız</a></div>
+        <div class="footer-column"><h3>İletişim</h3><a href="tel:+904422340000">+90 442 234 00 00</a><a href="mailto:merhaba@pusulaakademi.com">merhaba@pusulaakademi.com</a><span>Erzurum, Türkiye</span></div>
+        <div class="footer-column footer-action"><p>Hedefine giden yolda ilk adımı at.</p><a href="#iletisim" class="footer-arrow">Görüşme planla <span>↗</span></a></div>
       </div>
       <div class="section-shell copyright"><span>© 2024 Pusula Akademi</span><span>Geleceğine yön ver.</span></div>
     </footer>
