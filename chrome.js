@@ -1,7 +1,7 @@
 const pageChrome = {
   header: `
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Pusula Akademi ana sayfa">
+      <a class="brand" href="/" aria-label="Pusula Akademi ana sayfa">
         <span class="brand-mark" aria-hidden="true">✦</span>
         <span><strong>PUSULA</strong><small>AKADEMİ</small></span>
       </a>
@@ -35,7 +35,7 @@ const pageChrome = {
     <footer class="site-footer">
       <div class="section-shell footer-inner">
         <div class="footer-brand-column">
-          <a class="brand brand-footer" href="index.html"><span class="brand-mark">✦</span><span><strong>PUSULA</strong><small>AKADEMİ</small></span></a>
+          <a class="brand brand-footer" href="/"><span class="brand-mark">✦</span><span><strong>PUSULA</strong><small>AKADEMİ</small></span></a>
           <p>Doğru yöne atılan ilk adım. Yakutiye / Erzurum.</p>
           <div class="social-links">
             <a href="https://www.instagram.com/pusulaakademi25/" target="_blank" rel="noopener" aria-label="Instagram">
