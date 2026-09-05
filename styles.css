@@ -183,6 +183,7 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .contact-float-toggle i { background: var(--teal); border-radius: 5px; color: white; font-size: 11px; font-style: normal; opacity: 0; padding: 6px 9px; pointer-events: none; position: absolute; right: 72px; transform: translateX(8px); transition: opacity .2s, transform .2s; white-space: nowrap; }
 .contact-float-toggle:hover i, .contact-float.is-open .contact-float-toggle i { opacity: 1; transform: translateX(0); }
 .float-icon { font-size: 25px; line-height: 1; transition: transform .25s, opacity .25s; }
+.contact-float .float-icon { align-items: center; display: flex; height: 28px; justify-content: center; width: 28px; }
 .float-close { display: none; font-size: 28px; }
 .contact-float.is-open .float-chat { display: none; }
 .contact-float.is-open .float-close { display: block; }
@@ -192,11 +193,17 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
 .float-link b { background: white; border-radius: 6px; box-shadow: 0 5px 16px rgba(7,24,47,.15); color: var(--teal); font-size: 11px; opacity: 0; padding: 7px 9px; transform: translateX(8px); transition: opacity .2s, transform .2s; }
 .float-link:hover b { opacity: 1; transform: translateX(0); }
 .float-link > span { align-items: center; border: 3px solid white; border-radius: 50%; box-shadow: 0 5px 16px rgba(7,24,47,.18); color: white; display: flex; font: 700 16px "DM Sans"; height: 44px; justify-content: center; width: 44px; }
+.contact-float .float-link > span { flex: 0 0 44px; max-width: 44px; }
 .float-link svg { fill: none; height: 22px; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; width: 22px; }
 .float-link svg path:first-child { fill: none; }
 .instagram-link svg circle:last-child { fill: currentColor; stroke: none; }
 .float-chat svg { fill: none; height: 27px; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; width: 27px; }
 .float-chat svg path:first-child { fill: none; }
+.contact-float svg { display: block; flex: 0 0 auto; max-width: none; }
+.contact-float .instagram-link svg,
+.contact-float .whatsapp-link svg,
+.contact-float .phone-link svg { height: 22px; width: 22px; }
+.contact-float .float-chat svg { height: 27px; width: 27px; }
 .instagram-link > span { background: linear-gradient(135deg, #f9ce34, #ee2a7b 50%, #6228d7); }
 .whatsapp-link > span { background: #20b85a; }
 .phone-link > span { background: var(--teal); }
@@ -277,6 +284,7 @@ blockquote { font: 600 clamp(23px, 3vw, 37px)/1.3 "Manrope", sans-serif; letter-
   .contact-float-toggle { height: 57px; width: 57px; }
   .contact-float-links { bottom: 65px; }
   .float-link b { opacity: 1; transform: none; }
+  .contact-float .float-link > span { height: 44px; width: 44px; }
   .footer-inner { gap: 32px; padding: 45px 0 35px; }
   .footer-action { border-left: 0; border-top: 1px solid #315050; padding-left: 0; padding-top: 25px; }
   .footer-inner > p { margin: 26px 0; }
